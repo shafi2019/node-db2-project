@@ -7,7 +7,7 @@ const carsRouter = require('../cars/cars-router.js');
 server.use('/api/cars', carsRouter)
 
 server.get('/', (req, res) => {
-    res.send(`<h2> Lets Make A DataBase </h2>`)
+    res.send(`<h2>Lets Make A DataBase </h2>`)
 });
 
 module.exports = server;
