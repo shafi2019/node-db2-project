@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
     })
 });
 
-router.post('/', (req, res) => {
+router.post('/add', (req, res) => {
     const carData = req.body;
     db('cars').insert(carData)
       .then(ids => {
